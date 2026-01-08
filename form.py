@@ -79,12 +79,16 @@ if os.path.exists("IEEE.jpg"):
 else:
     img_tag = '<div style="text-align:center; font-size:40px; margin-bottom:10px;">IEEE ZC 🦅</div>'
 
-# -------------------- 15 Personality Questions --------------------
-# Logic:
-# CIE = Connection/Social | ENV = Harmony/Nature | NANO = Detail/Precision
-# REE = Energy/Efficiency | AERO = Freedom/Big Picture
+# -------------------- 20 Questions (Balanced) --------------------
+# Logic Mapping:
+# CIE = Connection, Signals, Relationships
+# ENV = Atmosphere, Surroundings, Nature
+# NANO = Details, Precision, Small parts
+# REE = Long-term, Efficiency, Sustainability
+# AERO = Exploration, Movement, Big Picture
 
 raw_questions = [
+    # --- Original 15 Situational Questions ---
     {
         "q": "1. Your friend is feeling down. How do you help?",
         "options": [
@@ -203,6 +207,48 @@ raw_questions = [
             {"text": "To achieve perfection in my craft.", "type": "NANO"},
             {"text": "To create a sustainable life.", "type": "REE"},
             {"text": "To be free.", "type": "AERO"}
+        ]
+    },
+    
+    # --- 5 NEW Psychological Questions (Added & Mapped to 3 Options) ---
+    {
+        "q": "16. If you enter a completely new place, what do you do first without thinking?",
+        "options": [
+            {"text": "Look around and observe how people interact.", "type": "CIE"},
+            {"text": "Notice small details others might miss.", "type": "NANO"},
+            {"text": "Move around and explore on your own.", "type": "AERO"}
+        ]
+    },
+    {
+        "q": "17. When reading a strange story or dream, what draws your attention most?",
+        "options": [
+            {"text": "The overall mood or feeling of the environment.", "type": "ENV"},
+            {"text": "The relationships between characters or objects.", "type": "CIE"},
+            {"text": "The ending or idea that lingers in your mind.", "type": "REE"}
+        ]
+    },
+    {
+        "q": "18. When facing an unfamiliar problem, which approach do you tend to take?",
+        "options": [
+            {"text": "Think about a solution that lasts in the long term.", "type": "REE"},
+            {"text": "Examine every detail carefully.", "type": "NANO"},
+            {"text": "Observe the effects on the surroundings.", "type": "ENV"}
+        ]
+    },
+    {
+        "q": "19. You hear whispers in a room with no people. What intrigues you most?",
+        "options": [
+            {"text": "Experimenting by moving or making sounds yourself.", "type": "AERO"},
+            {"text": "Trying to trace the source logically.", "type": "CIE"},
+            {"text": "Imagining if the whispers could continue over time.", "type": "REE"}
+        ]
+    },
+    {
+        "q": "20. When attending a meeting or lecture, what do you focus on?",
+        "options": [
+            {"text": "The overall atmosphere and how others interact.", "type": "ENV"},
+            {"text": "Ideas that are unusual or different from the norm.", "type": "AERO"},
+            {"text": "Points that require specific observation or precision.", "type": "NANO"}
         ]
     }
 ]
