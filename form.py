@@ -327,7 +327,7 @@ if not st.session_state.submitted:
             if not df.empty and "Major" in df.columns:
                 counts = df["Major"].value_counts()
                 st.bar_chart(counts, color="#64ffda")
-                st.dataframe(df[["Name", "Major"]].tail(10).iloc[::-1], use_container_width=True, hide_index=True)
+                st.dataframe(df[["Name", "Major"]].tail(1000).iloc[::-1], use_container_width=True, hide_index=True)
             else:
                 st.caption("Be the first to answer!")
 
